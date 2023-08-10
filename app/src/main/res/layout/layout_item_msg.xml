@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/msg_item_bg"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="21dp"
+    android:layout_marginEnd="13dp"
+    android:id="@+id/recordRoot"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@color/grey3"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            app:drawableStartCompat="@mipmap/icon_time" />
+
+        <TextView
+            android:id="@+id/timeStr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_toEndOf="@+id/time"
+            android:gravity="start"
+            android:layout_centerVertical="true"
+            android:paddingStart="30dp"
+            android:text="8 days ago"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="@string/from"
+            android:textColor="@color/grey3"
+            android:textSize="14sp"
+            app:drawableStartCompat="@mipmap/icon_from" />
+
+        <TextView
+            android:id="@+id/fromStr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/from"
+            android:gravity="start"
+            android:paddingStart="30dp"
+            android:text="14247384653"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="@string/msg"
+            android:textColor="@color/grey3"
+            android:textSize="14sp"
+            app:drawableStartCompat="@mipmap/icon_message" />
+
+        <TextView
+            android:id="@+id/msgStr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/msg"
+            android:gravity="start"
+            android:lineSpacingExtra="4dp"
+            android:singleLine="false"
+            android:text="[Yalla] You are retrieving your password. 248181 is your verification code, DO NOT tell anyone or your account might be stolen."
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/msg_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/code"
+            android:textColor="@color/grey3"
+            android:textSize="14sp"
+            app:drawableStartCompat="@mipmap/icon_code" />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="start"
+            android:lineSpacingExtra="4dp"
+            android:singleLine="false"
+            android:text="248181"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black1"
+            app:drawableEndCompat="@mipmap/icon_copy_num"
+            android:drawablePadding="8dp"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

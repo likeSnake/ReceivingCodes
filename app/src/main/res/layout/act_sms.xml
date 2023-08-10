@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/card"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/detailsImg"
+            android:layout_marginTop="28dp"
+            android:layout_width="120dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/detailsCountry"
+            android:layout_width="wrap_content"
+            android:textColor="#3D3D3D"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="United Statse"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/detailsNum"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black1"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="+14247384653"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:drawablePadding="8dp"
+            app:drawableEndCompat="@mipmap/icon_copy" />
+
+        <TextView
+            android:id="@+id/detailsRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/yellow1"
+            android:textSize="14sp"
+            android:text="@string/refresh"
+            android:drawableStart="@mipmap/icon_refresh"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/refresh_bg"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detailsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
